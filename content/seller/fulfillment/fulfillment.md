@@ -10,7 +10,7 @@ draft: false
 
 ---
 ## 分页查询商家未履约订单
-
+特殊说明:返回所有未履约订单，商家调用发货api后则不再返回
 > BASIC
 
 **Path:** /seller/202405/fulfillment/fulfillment-orders/unfulfilled-list
@@ -190,6 +190,7 @@ draft: false
 ---
 ## 商家发货
 
+特殊说明:不支持部分发货、所有商品必须全部发货
 > BASIC
 
 **Path:** /seller/202405/fulfillment/fulfillment-orders/shipment
