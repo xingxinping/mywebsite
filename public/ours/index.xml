@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>天财对接 on Wahool对接接口</title>
+    <link>http://localhost:1313/wahool/ours/</link>
+    <description>Recent content in 天财对接 on Wahool对接接口</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 23 Dec 2020 10:45:48 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/wahool/ours/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>接入说明</title>
+      <link>http://localhost:1313/wahool/ours/readme/readme/</link>
+      <pubDate>Wed, 23 Dec 2020 10:45:48 +0800</pubDate>
+      <guid>http://localhost:1313/wahool/ours/readme/readme/</guid>
+      <description>接入下单流程 sequenceDiagram 客户端-&gt;&gt;服务器: 渠道高校同步 服务器-&gt;&gt;客户端: 返回高校id 客户端-&gt;&gt;服务器: 职级信息同步 服务器-&gt;&gt;客户端: 同步结果success 客户端-&gt;&gt;服务器: 员工信息同步 服务器-&gt;&gt;客户端: 同步结果success 客户端-&gt;&gt;服务器: 单点登录 服务器-&gt;&gt;客户端: 返回登录成功后跳转url 服务器-&gt;&gt;服务器: 下单 服务器回调-&gt;&gt;客户端: 资金冻结/解冻 客户端-&gt;&gt;服务器回调: 冻结/解冻success 服务器-&gt;&gt;服务器: 出票 服务器回调-&gt;&gt;客户端: 订单状态推送 说明 需要加解密的，根据[rsa加密报文]demo，生成一对密钥，将公钥提供给我们，同时我们提供我们的公钥您&#xA;md5计算sign Java demo var sign=md5(hyid+zcm+key) public static String md5(String content) { String result = &amp;quot;&amp;quot;; try { MessageDigest md = MessageDigest.getInstance(&amp;quot;md5&amp;quot;); md.update(content.getBytes()); byte[] bytes = md.digest(); StringBuilder sb = new StringBuilder(); for (byte b : bytes) { String str = Integer.</description>
+    </item>
+  </channel>
+</rss>

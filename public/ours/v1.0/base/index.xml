@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>基础信息同步 on Wahool对接接口</title>
+    <link>http://localhost:1313/wahool/ours/v1.0/base/</link>
+    <description>Recent content in 基础信息同步 on Wahool对接接口</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 26 Dec 2020 09:37:18 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/wahool/ours/v1.0/base/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>渠道高校同步</title>
+      <link>http://localhost:1313/wahool/ours/v1.0/base/distributor_sync/</link>
+      <pubDate>Sat, 26 Dec 2020 09:37:18 +0800</pubDate>
+      <guid>http://localhost:1313/wahool/ours/v1.0/base/distributor_sync/</guid>
+      <description> 说明 同步高校列表 传会员id则更新，不传id则插入&#xA;新添加接口 基础信息 路径 请求方式 说明 /distributor_sync/list POST 高校同步 请求参数 字段 说明 类型 是否必须 例子 isEnc 是否加密 boolean Y false tamperStr 防篡改字符串 String Y isCpr 数据是否压缩（压缩方式snappy） boolean Y false memberInfo 会员信息（List&amp;lt;Member&amp;gt;的json字符串） String Y Member 字段 说明 类型 是否必须 例子 memberId 会员id String N 1 memberName 会员名称 String Y 清华大学 返回数据 字段 说明 类型 是否必须 例子 status 请求状态 成功true 失败false Boolean Y true code 200为成功 400请求资源错误 500服务器端错误 int Y 200 msg 返回结果 String（List&amp;lt;Member&amp;gt;的标准json串） Y msg 字段 说明 类型 是否必须 例子 memberId 会员id String N 1 memberName 会员名称 String Y 清华大学 Example 请求 { } 返回 { } </description>
+    </item>
+    <item>
+      <title>职级信息同步</title>
+      <link>http://localhost:1313/wahool/ours/v1.0/base/level_sync/</link>
+      <pubDate>Sat, 26 Dec 2020 09:35:51 +0800</pubDate>
+      <guid>http://localhost:1313/wahool/ours/v1.0/base/level_sync/</guid>
+      <description> 说明 根据高校id同步职级信息&#xA;新添加接口 基础信息 路径 请求方式 说明 /level_sync/list POST 职级信息同步 请求参数 字段 说明 类型 是否必须 例子 isEnc 是否加密 boolean Y false tamperStr 防篡改字符串 String Y isCpr 数据是否压缩（压缩方式snappy） boolean Y false levelInfo 职级信息（List&amp;lt;Level&amp;gt;的json字符串） String Y Level 字段 说明 类型 是否必须 例子 memberId 会员id（商旅提供，高校同步接口返回） String Y 1 levelNo 职级编号 String Y 001 levelName 职级名称 String Y 返回数据 字段 说明 类型 是否必须 例子 status 请求状态 成功true 失败false Boolean Y true code 200为成功 400请求资源错误 500服务器端错误 int Y 200 msg 返回结果说明 String Y Example 请求 { } 返回 { } </description>
+    </item>
+  </channel>
+</rss>

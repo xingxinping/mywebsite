@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>商家对接WAHOOL on Wahool对接接口</title>
+    <link>http://localhost:1313/wahool/seller/</link>
+    <description>Recent content in 商家对接WAHOOL on Wahool对接接口</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 10 May 2024 10:45:48 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/wahool/seller/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>认证</title>
+      <link>http://localhost:1313/wahool/seller/auth/auth/</link>
+      <pubDate>Fri, 10 May 2024 10:45:48 +0800</pubDate>
+      <guid>http://localhost:1313/wahool/seller/auth/auth/</guid>
+      <description>接口调用说明 用户方每次发起 http 请求时，需要在 http header 填入一个属性： Authorization， Authorization 对应 用户获取认证token接口返回的accessToken。 Http request header 信息如下表格所示：&#xA;Headers:&#xA;name value required desc Authorization Bearer eyJ0dGxNaWxsaXMiOjcyMDAwMDAsIm9wZW5BY2NvdW50SWQiOjEsImlhdCI6MTcxNDk4MTI2MywiZXhwIjoxNzE0OTgNDYzfQ Yes 认证接口返回的accessToken 获取认证token接口 BASIC&#xA;Path: /seller/202405/auth/get-access-token&#xA;Method: POST&#xA;REQUEST&#xA;Request Body:&#xA;name required type desc example accessKey YES string RjtQObU4DB3egXyAjiYO secretKey YES string ddjY22igIqjeY0GtE8GUcRBtsQwOYYEGWFsoQb5u Request Demo:&#xA;{ &amp;quot;accessKey&amp;quot;:&amp;quot;RjtQObU4DB3egXyAjiYO&amp;quot;, &amp;quot;secretKey&amp;quot;:&amp;quot;ddjY22igIqjeY0GtE8GUcRBtsQwOYYEGWFsoQb5u&amp;quot; } RESPONSE&#xA;Body:&#xA;name type desc example code integer 响应状态码 200 message string 提示信息 success data object 数据包 |─accessToken string 访问令牌 Bearer eyJ0dGxNaWxsaXMiOjcyMDAwMDAsIm9wZW5BY2NvdW50SWQiOjEsImlhdCI6MTcxNDk4MTI2MywiZXhwIjoxNzE0OTgNDYzfQ |─expiresIn integer 有效期（秒） 7200000 locale integer 8 localeDisplay string GMT+8 Response Demo:</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>订单相关 on Wahool对接接口</title>
+    <link>http://localhost:1313/wahool/ours/v1.0/order/</link>
+    <description>Recent content in 订单相关 on Wahool对接接口</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 23 Dec 2020 13:31:47 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/wahool/ours/v1.0/order/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>订单同步</title>
+      <link>http://localhost:1313/wahool/ours/v1.0/order/order_sync/</link>
+      <pubDate>Wed, 23 Dec 2020 13:31:47 +0800</pubDate>
+      <guid>http://localhost:1313/wahool/ours/v1.0/order/order_sync/</guid>
+      <description>说明 通过时间范围或者订单号、申请单号获取订单详情&#xA;基础信息 路径 请求方式 说明 /order_sync/tiancai/info POST 订单同步/获取订单详情 请求参数 字段 说明 类型 是否必须 例子 dateFrom 预订时间始 String N 2020-01-20 dateTo 预订时间止，结束日期不能小于开始日期 String N 2020-01-22 searchType 产品类别1:机票，2:火车票，3:酒店 String Y 1 ddbh 订单编号 String N 200217893679 ddlx 订单类型(详见数据字典)配合订单编号一起使用 String N 01001 sqdh 申请单号 String Y sq01001 passengerNo 出行人工号 String Y 10001 start 分页(起始)注意：分页按照第二页start=start+count Integer N 1 count 分页的每页条数 Integer N 50 返回数据 字段 说明 类型 是否必须 例子 status 响应状态true为成功 Boolean Y true code 响应状态码（详见数据字典） Integer Y 200 msg 提示信息 String N 成功 isEnc 是否加密 Boolean Y false tamperStr 防篡改串EncryptUtil.</description>
+    </item>
+  </channel>
+</rss>

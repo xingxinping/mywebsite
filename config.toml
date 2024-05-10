@@ -1,0 +1,16 @@
+
+baseURL = "http://localhost:1313/wahool"
+languageCode = "zh-cn"
+title = "Wahool对接接口"
+theme = "hugo-geekdoc"
+
+
+[markup]
+[markup.goldmark.renderer]
+# Needed for mermaid shortcode
+unsafe = true
+[markup.highlight]
+codeFences = false
+[markup.tableOfContents]
+startLevel = 1
+endLevel = 9

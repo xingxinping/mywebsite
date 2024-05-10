@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:1313/wahool/</loc>
+    <lastmod>2024-05-10T10:45:48+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/wahool/seller/product/sku/</loc>
+    <lastmod>2024-05-10T10:45:48+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/wahool/seller/</loc>
+    <lastmod>2024-05-10T10:45:48+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/wahool/seller/fulfillment/fulfillment/</loc>
+    <lastmod>2024-05-10T10:45:48+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/wahool/seller/product/inventory/</loc>
+    <lastmod>2024-05-10T10:45:48+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/wahool/seller/auth/auth/</loc>
+    <lastmod>2024-05-10T10:45:48+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/wahool/seller/product/</loc>
+    <lastmod>2020-12-26T09:35:13+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/wahool/seller/fulfillment/</loc>
+    <lastmod>2020-12-26T09:35:13+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/wahool/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/wahool/tags/</loc>
+  </url>
+</urlset>

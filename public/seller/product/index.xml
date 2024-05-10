@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>商品 on Wahool对接接口</title>
+    <link>http://localhost:1313/wahool/seller/product/</link>
+    <description>Recent content in 商品 on Wahool对接接口</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 10 May 2024 10:45:48 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/wahool/seller/product/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>sku</title>
+      <link>http://localhost:1313/wahool/seller/product/sku/</link>
+      <pubDate>Fri, 10 May 2024 10:45:48 +0800</pubDate>
+      <guid>http://localhost:1313/wahool/seller/product/sku/</guid>
+      <description>说明 商品sku相关接口&#xA;分页查询商家商品sku基础信息列表 BASIC&#xA;Path: /seller/202405/product/sku/base-list&#xA;Method: POST&#xA;REQUEST&#xA;Request Body:&#xA;name required type desc example size NO integer 每页条数 默认 20，max 200 20 page NO string 第几页 默认 1 1 state NO object 状态 0 下架 1 上架 9待上架 99已归档 1 skuList NO array wahool sku列表 |─ NO string wahool sku WU66ECPM8B sellerSkuList NO array 商家自己的SKU列表 |─ NO string 商家自己的SKU B0CQ4JNC58 Request Demo:&#xA;{ &amp;quot;state&amp;quot;: 1, &amp;quot;skuList&amp;quot;: [ &amp;quot;WU66ECPM8B&amp;quot; ], &amp;quot;sellerSkuList&amp;quot;: [ &amp;quot;B0CQ4JNC58&amp;quot; ], &amp;quot;size&amp;quot;: 1, &amp;quot;page&amp;quot;: 20 } RESPONSE</description>
+    </item>
+    <item>
+      <title>库存</title>
+      <link>http://localhost:1313/wahool/seller/product/inventory/</link>
+      <pubDate>Fri, 10 May 2024 10:45:48 +0800</pubDate>
+      <guid>http://localhost:1313/wahool/seller/product/inventory/</guid>
+      <description>说明 商家库存相关接口&#xA;批量修改库存数量 BASIC&#xA;Path: /seller/202405/product/inventory/batch-update&#xA;Method: POST&#xA;REQUEST&#xA;Request Body:&#xA;name required type desc example YES array YES object |─sku YES string wahool Sku WU66ECPM8B |─quantity YES integer 库存数量 2 Request Demo:&#xA;[ { &amp;quot;sku&amp;quot;: &amp;quot;WU66ECPM8B&amp;quot;, &amp;quot;quantity&amp;quot;: 2 } ] RESPONSE&#xA;Body:&#xA;name type desc example code integer 响应状态码 200 message string 提示信息 success data object 数据包 locale integer 0 localeDisplay string Response Demo:&#xA;{ &amp;quot;code&amp;quot;: 200, &amp;quot;message&amp;quot;: &amp;quot;success&amp;quot;, &amp;quot;data&amp;quot;: {}, &amp;quot;locale&amp;quot;: 0, &amp;quot;localeDisplay&amp;quot;: &amp;quot;&amp;quot; } 分页查询库存列表 BASIC</description>
+    </item>
+  </channel>
+</rss>

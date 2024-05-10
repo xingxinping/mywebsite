@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>履约 on Wahool对接接口</title>
+    <link>http://localhost:1313/wahool/seller/fulfillment/</link>
+    <description>Recent content in 履约 on Wahool对接接口</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 10 May 2024 10:45:48 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/wahool/seller/fulfillment/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>履约订单</title>
+      <link>http://localhost:1313/wahool/seller/fulfillment/fulfillment/</link>
+      <pubDate>Fri, 10 May 2024 10:45:48 +0800</pubDate>
+      <guid>http://localhost:1313/wahool/seller/fulfillment/fulfillment/</guid>
+      <description>说明 商家履约订单相关接口&#xA;分页查询商家未履约订单 BASIC&#xA;Path: /seller/202405/fulfillment/fulfillment-orders/unfulfilled-list&#xA;Method: GET&#xA;REQUEST&#xA;Query:&#xA;name required desc example size NO 每页条数 默认 20，max 200 20 page NO 第几页 默认 1 1 RESPONSE&#xA;Body:&#xA;name type desc example code integer 响应状态码 200 message string 提示信息 success data object 数据包 |─data array 数据项 |─ object |─fulfillmentOrderNumber string 履约单号 1231154465 |─state integer 状态 0未发货 10已发货 9履约单已取消 0 |─address object 地址 |─consignee string 收件人姓名 hall |─phone string 联系电话 21111111111 |─address1 string 地址1 1234 amazon way |─address2 string 地址2 suite 123 |─city string 城市 Troy |─stateProvince string 州编码或者省份 MI |─postalCode string 邮编 48084 |─countryCode string 国家code US |─fulfillmentOrderItems array 履约单商品List |─ object |─sku string wahool Sku WU66ECPM8B |─sellerSku string 商家自己的Sku B0CQ4JNC58 |─quantity integer 商品数量 3 |─total integer 总条数 8 |─totalPage integer 总页数 1 |─size integer 分页大小 20 |─currentPage integer 当前页 1 locale integer localeDisplay string Response Demo: { &amp;quot;code&amp;quot;: 200, &amp;quot;message&amp;quot;: &amp;quot;success&amp;quot;, &amp;quot;data&amp;quot;: { &amp;quot;data&amp;quot;: [ { &amp;quot;fulfillmentOrderNumber&amp;quot;: &amp;quot;1231154465&amp;quot;, &amp;quot;state&amp;quot;: 0, &amp;quot;address&amp;quot;: { &amp;quot;consignee&amp;quot;: &amp;quot;hall&amp;quot;, &amp;quot;phone&amp;quot;: &amp;quot;21111111111&amp;quot;, &amp;quot;address1&amp;quot;: &amp;quot;1234 amazon way&amp;quot;, &amp;quot;address2&amp;quot;: &amp;quot;suite 123&amp;quot;, &amp;quot;city&amp;quot;: &amp;quot;Troy&amp;quot;, &amp;quot;stateProvince&amp;quot;: &amp;quot;MI&amp;quot;, &amp;quot;postalCode&amp;quot;: &amp;quot;48084&amp;quot;, &amp;quot;countryCode&amp;quot;: &amp;quot;US&amp;quot; }, &amp;quot;fulfillmentOrderItems&amp;quot;: [ { &amp;quot;sku&amp;quot;: &amp;quot;WU66ECPM8B&amp;quot;, &amp;quot;sellerSku&amp;quot;: &amp;quot;B0CQ4JNC58&amp;quot;, &amp;quot;quantity&amp;quot;: 3 } ] } ], &amp;quot;total&amp;quot;: 8, &amp;quot;totalPage&amp;quot;: 1, &amp;quot;size&amp;quot;: 20, &amp;quot;currentPage&amp;quot;: 1, &amp;quot;page&amp;quot;: 1 }, &amp;quot;locale&amp;quot;: 0, &amp;quot;localeDisplay&amp;quot;: &amp;quot;&amp;quot; } 查询履约单明细 BASIC</description>
+    </item>
+  </channel>
+</rss>
