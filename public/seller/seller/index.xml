@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>卖家对接文档 on Wahool对接接口</title>
+    <link>http://localhost:1313/seller/seller/</link>
+    <description>Recent content in 卖家对接文档 on Wahool对接接口</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 10 May 2024 10:45:48 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/seller/seller/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>概述</title>
+      <link>http://localhost:1313/seller/seller/overview/</link>
+      <pubDate>Fri, 10 May 2024 10:45:48 +0800</pubDate>
+      <guid>http://localhost:1313/seller/seller/overview/</guid>
+      <description> Context Context&#xA;支持的请求方式 GET: POST: PUT DELETE API调用 Test https://open-api.test.wahool.com&#xA;Prod https://open-api.wahool.com&#xA;Common parameters 名称 请求方式 说明 Authorization Headers 对应 &amp;ldquo;获取认证token接口&amp;quot;返回的accessToken 流程图 </description>
+    </item>
+  </channel>
+</rss>

@@ -3,13 +3,6 @@ title: "sku"
 date: 2024-05-10T10:45:48+08:00
 draft: false
 ---
-
-### 说明
->商品sku相关接口
-
-
-
----
 ## 分页查询商家商品sku基础信息列表
 
 > BASIC
@@ -68,9 +61,8 @@ draft: false
 | &ensp;&ensp;&#124;─totalPage                         | integer | 总页数                     | 1              |
 | &ensp;&ensp;&#124;─size                              | integer | 分页大小                    | 20             |
 | &ensp;&ensp;&#124;─currentPage                       | integer | 当前页                     | 1              |
-| locale                                               | integer |                         | 0              |
-| localeDisplay                                        | string  |                         |                |
-
+| locale                                               | integer |                         | 8              |
+| localeDisplay                                        | string  |                         | GMT+8          |
 **Response Demo:**
 
 ```json

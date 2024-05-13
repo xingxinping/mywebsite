@@ -1,5 +1,5 @@
 
-baseURL = "http://localhost:1313/wahool"
+baseURL = "http://localhost:1313"
 languageCode = "zh-cn"
 title = "Wahool对接接口"
 theme = "hugo-geekdoc"

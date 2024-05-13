@@ -13,7 +13,8 @@
 
 
   <meta name="description" content="说明 商家履约订单相关接口
-分页查询商家未履约订单 BASIC
+分页查询商家未履约订单 特殊说明:返回所有未履约订单，商家调用发货api后则不再返回
+BASIC
 Path: /seller/202405/fulfillment/fulfillment-orders/unfulfilled-list
 Method: GET
 REQUEST
@@ -24,18 +25,18 @@ name type desc example code integer 响应状态码 200 message string 提示信
 
     <title>履约订单 | Wahool对接接口</title>
 
-    <link rel="icon" type="image/svg+xml" href="/wahool/favicon/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/Users/xingxinping/file/work/wahoolcode/mywebsite/public/favicon/favicon.svg" />
 <link
   rel="icon"
   type="image/png"
   sizes="32x32"
-  href="/wahool/favicon/favicon-32x32.png"
+  href="/Users/xingxinping/file/work/wahoolcode/mywebsite/public/favicon/favicon-32x32.png"
 />
 <link
   rel="icon"
   type="image/png"
   sizes="16x16"
-  href="/wahool/favicon/favicon-16x16.png"
+  href="/Users/xingxinping/file/work/wahoolcode/mywebsite/public/favicon/favicon-16x16.png"
 />
 
     
@@ -47,7 +48,8 @@ name type desc example code integer 响应状态码 200 message string 提示信
   />
   <meta property="og:site_name" content="Wahool对接接口" />
   <meta property="og:description" content="说明 商家履约订单相关接口
-分页查询商家未履约订单 BASIC
+分页查询商家未履约订单 特殊说明:返回所有未履约订单，商家调用发货api后则不再返回
+BASIC
 Path: /seller/202405/fulfillment/fulfillment-orders/unfulfilled-list
 Method: GET
 REQUEST
@@ -56,7 +58,7 @@ name required desc example size NO 每页条数 默认 20，max 200 20 page NO �
 Body:
 name type desc example code integer 响应状态码 200 message string 提示信息 success data object 数据包 |─data array 数据项 |─ object |─fulfillmentOrderNumber string 履约单号 1231154465 |─state integer 状态 0未发货 10已发货 9履约单已取消 0 |─address object 地址 |─consignee string 收件人姓名 hall |─phone string 联系电话 21111111111 |─address1 string 地址1 1234 amazon way |─address2 string 地址2 suite 123 |─city string 城市 Troy |─stateProvince string 州编码或者省份 MI |─postalCode string 邮编 48084 |─countryCode string 国家code US |─fulfillmentOrderItems array 履约单商品List |─ object |─sku string wahool Sku WU66ECPM8B |─sellerSku string 商家自己的Sku B0CQ4JNC58 |─quantity integer 商品数量 3 |─total integer 总条数 8 |─totalPage integer 总页数 1 |─size integer 分页大小 20 |─currentPage integer 当前页 1 locale integer localeDisplay string Response Demo: { &#34;code&#34;: 200, &#34;message&#34;: &#34;success&#34;, &#34;data&#34;: { &#34;data&#34;: [ { &#34;fulfillmentOrderNumber&#34;: &#34;1231154465&#34;, &#34;state&#34;: 0, &#34;address&#34;: { &#34;consignee&#34;: &#34;hall&#34;, &#34;phone&#34;: &#34;21111111111&#34;, &#34;address1&#34;: &#34;1234 amazon way&#34;, &#34;address2&#34;: &#34;suite 123&#34;, &#34;city&#34;: &#34;Troy&#34;, &#34;stateProvince&#34;: &#34;MI&#34;, &#34;postalCode&#34;: &#34;48084&#34;, &#34;countryCode&#34;: &#34;US&#34; }, &#34;fulfillmentOrderItems&#34;: [ { &#34;sku&#34;: &#34;WU66ECPM8B&#34;, &#34;sellerSku&#34;: &#34;B0CQ4JNC58&#34;, &#34;quantity&#34;: 3 } ] } ], &#34;total&#34;: 8, &#34;totalPage&#34;: 1, &#34;size&#34;: 20, &#34;currentPage&#34;: 1, &#34;page&#34;: 1 }, &#34;locale&#34;: 0, &#34;localeDisplay&#34;: &#34;&#34; } 查询履约单明细 BASIC" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/wahool/seller/fulfillment/fulfillment/" />
+<meta property="og:url" content="http://localhost:1313/Users/xingxinping/file/work/wahoolcode/mywebsite/public/seller/fulfillment/fulfillment/" />
 
 <meta property="article:section" content="Seller" />
     <meta
@@ -72,7 +74,8 @@ name type desc example code integer 响应状态码 200 message string 提示信
   <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="履约订单" />
   <meta name="twitter:description" content="说明 商家履约订单相关接口
-分页查询商家未履约订单 BASIC
+分页查询商家未履约订单 特殊说明:返回所有未履约订单，商家调用发货api后则不再返回
+BASIC
 Path: /seller/202405/fulfillment/fulfillment-orders/unfulfilled-list
 Method: GET
 REQUEST
@@ -88,15 +91,15 @@ name type desc example code integer 响应状态码 200 message string 提示信
       "@type": "TechArticle",
       "articleSection": "Seller",
       "name": "履约订单",
-      "url" : "http://localhost:1313/wahool/seller/fulfillment/fulfillment/",
+      "url" : "http://localhost:1313/Users/xingxinping/file/work/wahoolcode/mywebsite/public/seller/fulfillment/fulfillment/",
       "headline": "履约订单",
-      "description": "说明 商家履约订单相关接口\n分页查询商家未履约订单 BASIC\nPath: \/seller\/202405\/fulfillment\/fulfillment-orders\/unfulfilled-list\nMethod: GET\nREQUEST\nQuery:\nname required desc example size NO 每页条数 默认 20，max 200 20 page NO 第几页 默认 1 1 RESPONSE\nBody:\nname type desc example code integer 响应状态码 200 message string 提示信息 success data object 数据包 |─data array 数据项 |─ object |─fulfillmentOrderNumber string 履约单号 1231154465 |─state integer 状态 0未发货 10已发货 9履约单已取消 0 |─address object 地址 |─consignee string 收件人姓名 hall |─phone string 联系电话 21111111111 |─address1 string 地址1 1234 amazon way |─address2 string 地址2 suite 123 |─city string 城市 Troy |─stateProvince string 州编码或者省份 MI |─postalCode string 邮编 48084 |─countryCode string 国家code US |─fulfillmentOrderItems array 履约单商品List |─ object |─sku string wahool Sku WU66ECPM8B |─sellerSku string 商家自己的Sku B0CQ4JNC58 |─quantity integer 商品数量 3 |─total integer 总条数 8 |─totalPage integer 总页数 1 |─size integer 分页大小 20 |─currentPage integer 当前页 1 locale integer localeDisplay string Response Demo: { \u0022code\u0022: 200, \u0022message\u0022: \u0022success\u0022, \u0022data\u0022: { \u0022data\u0022: [ { \u0022fulfillmentOrderNumber\u0022: \u00221231154465\u0022, \u0022state\u0022: 0, \u0022address\u0022: { \u0022consignee\u0022: \u0022hall\u0022, \u0022phone\u0022: \u002221111111111\u0022, \u0022address1\u0022: \u00221234 amazon way\u0022, \u0022address2\u0022: \u0022suite 123\u0022, \u0022city\u0022: \u0022Troy\u0022, \u0022stateProvince\u0022: \u0022MI\u0022, \u0022postalCode\u0022: \u002248084\u0022, \u0022countryCode\u0022: \u0022US\u0022 }, \u0022fulfillmentOrderItems\u0022: [ { \u0022sku\u0022: \u0022WU66ECPM8B\u0022, \u0022sellerSku\u0022: \u0022B0CQ4JNC58\u0022, \u0022quantity\u0022: 3 } ] } ], \u0022total\u0022: 8, \u0022totalPage\u0022: 1, \u0022size\u0022: 20, \u0022currentPage\u0022: 1, \u0022page\u0022: 1 }, \u0022locale\u0022: 0, \u0022localeDisplay\u0022: \u0022\u0022 } 查询履约单明细 BASIC",
-      "wordCount" : "730",
+      "description": "说明 商家履约订单相关接口\n分页查询商家未履约订单 特殊说明:返回所有未履约订单，商家调用发货api后则不再返回\nBASIC\nPath: \/seller\/202405\/fulfillment\/fulfillment-orders\/unfulfilled-list\nMethod: GET\nREQUEST\nQuery:\nname required desc example size NO 每页条数 默认 20，max 200 20 page NO 第几页 默认 1 1 RESPONSE\nBody:\nname type desc example code integer 响应状态码 200 message string 提示信息 success data object 数据包 |─data array 数据项 |─ object |─fulfillmentOrderNumber string 履约单号 1231154465 |─state integer 状态 0未发货 10已发货 9履约单已取消 0 |─address object 地址 |─consignee string 收件人姓名 hall |─phone string 联系电话 21111111111 |─address1 string 地址1 1234 amazon way |─address2 string 地址2 suite 123 |─city string 城市 Troy |─stateProvince string 州编码或者省份 MI |─postalCode string 邮编 48084 |─countryCode string 国家code US |─fulfillmentOrderItems array 履约单商品List |─ object |─sku string wahool Sku WU66ECPM8B |─sellerSku string 商家自己的Sku B0CQ4JNC58 |─quantity integer 商品数量 3 |─total integer 总条数 8 |─totalPage integer 总页数 1 |─size integer 分页大小 20 |─currentPage integer 当前页 1 locale integer localeDisplay string Response Demo: { \u0022code\u0022: 200, \u0022message\u0022: \u0022success\u0022, \u0022data\u0022: { \u0022data\u0022: [ { \u0022fulfillmentOrderNumber\u0022: \u00221231154465\u0022, \u0022state\u0022: 0, \u0022address\u0022: { \u0022consignee\u0022: \u0022hall\u0022, \u0022phone\u0022: \u002221111111111\u0022, \u0022address1\u0022: \u00221234 amazon way\u0022, \u0022address2\u0022: \u0022suite 123\u0022, \u0022city\u0022: \u0022Troy\u0022, \u0022stateProvince\u0022: \u0022MI\u0022, \u0022postalCode\u0022: \u002248084\u0022, \u0022countryCode\u0022: \u0022US\u0022 }, \u0022fulfillmentOrderItems\u0022: [ { \u0022sku\u0022: \u0022WU66ECPM8B\u0022, \u0022sellerSku\u0022: \u0022B0CQ4JNC58\u0022, \u0022quantity\u0022: 3 } ] } ], \u0022total\u0022: 8, \u0022totalPage\u0022: 1, \u0022size\u0022: 20, \u0022currentPage\u0022: 1, \u0022page\u0022: 1 }, \u0022locale\u0022: 0, \u0022localeDisplay\u0022: \u0022\u0022 } 查询履约单明细 BASIC",
+      "wordCount" : "732",
       "inLanguage": "en",
       "isFamilyFriendly": "true",
       "mainEntityOfPage": {
           "@type": "WebPage",
-          "@id": "http://localhost:1313/wahool/seller/fulfillment/fulfillment/"
+          "@id": "http://localhost:1313/Users/xingxinping/file/work/wahoolcode/mywebsite/public/seller/fulfillment/fulfillment/"
       },
       "copyrightHolder" : "Wahool对接接口",
       "copyrightYear" : "2024",
@@ -106,10 +109,10 @@ name type desc example code integer 响应状态码 200 message string 提示信
       "publisher":{
           "@type":"Organization",
           "name": "Wahool对接接口",
-          "url": "http://localhost:1313/wahool/",
+          "url": "http://localhost:1313/Users/xingxinping/file/work/wahoolcode/mywebsite/public/",
           "logo": {
               "@type": "ImageObject",
-              "url": "http://localhost:1313/wahool/brand.svg",
+              "url": "http://localhost:1313/Users/xingxinping/file/work/wahoolcode/mywebsite/public/brand.svg",
               "width":"32",
               "height":"32"
           }
@@ -119,68 +122,68 @@ name type desc example code integer 响应状态码 200 message string 提示信
 
 
     
-  <script src="/wahool/js/colortheme-5cd55a83.bundle.min.js"></script>
-<script src="/wahool/js/main-09678822.bundle.min.js"></script>
+  <script src="/Users/xingxinping/file/work/wahoolcode/mywebsite/public/js/colortheme-5cd55a83.bundle.min.js"></script>
+<script src="/Users/xingxinping/file/work/wahoolcode/mywebsite/public/js/main-09678822.bundle.min.js"></script>
 
 <link
   rel="preload"
   as="font"
-  href="/wahool/fonts/Metropolis.woff2"
+  href="/Users/xingxinping/file/work/wahoolcode/mywebsite/public/fonts/Metropolis.woff2"
   type="font/woff2"
   crossorigin="anonymous"
 />
 <link
   rel="preload"
   as="font"
-  href="/wahool/fonts/LiberationSans.woff2"
+  href="/Users/xingxinping/file/work/wahoolcode/mywebsite/public/fonts/LiberationSans.woff2"
   type="font/woff2"
   crossorigin="anonymous"
 />
 
 <link
   rel="preload"
-  href="/wahool/main-a559ecaa.min.css"
+  href="/Users/xingxinping/file/work/wahoolcode/mywebsite/public/main-a559ecaa.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="/wahool/main-a559ecaa.min.css"
+  href="/Users/xingxinping/file/work/wahoolcode/mywebsite/public/main-a559ecaa.min.css"
   media="all"
 />
 
 <link
   rel="preload"
-  href="/wahool/mobile-79ddc617.min.css"
+  href="/Users/xingxinping/file/work/wahoolcode/mywebsite/public/mobile-79ddc617.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="/wahool/mobile-79ddc617.min.css"
+  href="/Users/xingxinping/file/work/wahoolcode/mywebsite/public/mobile-79ddc617.min.css"
   media="screen and (max-width: 45rem)"
 />
 
 <link
   rel="preload"
-  href="/wahool/print-735ccc12.min.css"
+  href="/Users/xingxinping/file/work/wahoolcode/mywebsite/public/print-735ccc12.min.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="/wahool/print-735ccc12.min.css"
+  href="/Users/xingxinping/file/work/wahoolcode/mywebsite/public/print-735ccc12.min.css"
   media="print"
 />
 
 <link
   rel="preload"
-  href="/wahool/custom.css"
+  href="/Users/xingxinping/file/work/wahoolcode/mywebsite/public/custom.css"
   as="style"
 />
 <link
   rel="stylesheet"
-  href="/wahool/custom.css"
+  href="/Users/xingxinping/file/work/wahoolcode/mywebsite/public/custom.css"
   media="all"
 />
-  <link href="http://localhost:1313/wahool/seller/fulfillment/fulfillment/" rel="canonical" type="text/html" />
+  <link href="http://localhost:1313/Users/xingxinping/file/work/wahoolcode/mywebsite/public/seller/fulfillment/fulfillment/" rel="canonical" type="text/html" />
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
 
@@ -217,11 +220,11 @@ name type desc example code integer 响应状态码 200 message string 提示信
       </label>
     
     <div>
-      <a class="gdoc-brand gdoc-header__link" href="http://localhost:1313/wahool/">
+      <a class="gdoc-brand gdoc-header__link" href="http://localhost:1313/Users/xingxinping/file/work/wahoolcode/mywebsite/public/">
         <span class="flex align-center">
           <img
             class="gdoc-brand__img"
-            src="/wahool/brand.svg"
+            src="/Users/xingxinping/file/work/wahoolcode/mywebsite/public/brand.svg"
             alt=""
           />
           <span class="gdoc-brand__title">Wahool对接接口</span>
@@ -249,7 +252,7 @@ name type desc example code integer 响应状态码 200 message string 提示信
         </span>
 
         <span class="gdoc-menu-header__home">
-          <a href="http://localhost:1313/wahool/" class="gdoc-header__link">
+          <a href="http://localhost:1313/Users/xingxinping/file/work/wahoolcode/mywebsite/public/" class="gdoc-header__link">
             <svg class="gdoc-icon gdoc_home">
               <title>Back to homepage</title>
               <use xlink:href="#gdoc_home"></use>
@@ -296,7 +299,7 @@ name type desc example code integer 响应状态码 200 message string 提示信
       placeholder="Search..."
       aria-label="Search"
       maxlength="64"
-      data-site-base-url="http://localhost:1313/wahool/"
+      data-site-base-url="http://localhost:1313/Users/xingxinping/file/work/wahoolcode/mywebsite/public/"
       data-site-lang="en"
     />
     <ul id="gdoc-search-results" class="gdoc-search__list"></ul>
@@ -425,7 +428,7 @@ name type desc example code integer 响应状态码 200 message string 提示信
               
                 <span class="flex">
                   <a
-                    href="/wahool/seller/product/sku/"
+                    href="/Users/xingxinping/file/work/wahoolcode/mywebsite/public/seller/product/sku/"
                     class="gdoc-nav__entry"
                   >
                     sku
@@ -461,7 +464,7 @@ name type desc example code integer 响应状态码 200 message string 提示信
               
                 <span class="flex">
                   <a
-                    href="/wahool/seller/product/inventory/"
+                    href="/Users/xingxinping/file/work/wahoolcode/mywebsite/public/seller/product/inventory/"
                     class="gdoc-nav__entry"
                   >
                     库存
@@ -544,7 +547,7 @@ name type desc example code integer 响应状态码 200 message string 提示信
               
                 <span class="flex">
                   <a
-                    href="/wahool/seller/fulfillment/fulfillment/"
+                    href="/Users/xingxinping/file/work/wahoolcode/mywebsite/public/seller/fulfillment/fulfillment/"
                     class="gdoc-nav__entry is-active"
                   >
                     履约订单
@@ -587,7 +590,7 @@ name type desc example code integer 响应状态码 200 message string 提示信
               
                 <span class="flex">
                   <a
-                    href="/wahool/seller/auth/auth/"
+                    href="/Users/xingxinping/file/work/wahoolcode/mywebsite/public/seller/auth/auth/"
                     class="gdoc-nav__entry"
                   >
                     认证
@@ -680,7 +683,7 @@ name type desc example code integer 响应状态码 200 message string 提示信
     
   
   
-    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/wahool/' href='/wahool/'><span itemprop='name'>Home</span></a><meta itemprop='position' content='2' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/wahool/seller/' href='/wahool/seller/'><span itemprop='name'>商家对接WAHOOL</span></a><meta itemprop='position' content='3' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/wahool/seller/fulfillment/' href='/wahool/seller/fulfillment/'><span itemprop='name'>履约</span></a><meta itemprop='position' content='4' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>履约订单</span><meta itemprop='position' content='5' /></li>
+    <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Users/xingxinping/file/work/wahoolcode/mywebsite/public/' href='/Users/xingxinping/file/work/wahoolcode/mywebsite/public/'><span itemprop='name'>Home</span></a><meta itemprop='position' content='8' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Users/xingxinping/file/work/wahoolcode/mywebsite/public/seller/' href='/Users/xingxinping/file/work/wahoolcode/mywebsite/public/seller/'><span itemprop='name'>商家对接WAHOOL</span></a><meta itemprop='position' content='9' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><a itemscope itemtype='https://schema.org/WebPage' itemprop='item' itemid='/Users/xingxinping/file/work/wahoolcode/mywebsite/public/seller/fulfillment/' href='/Users/xingxinping/file/work/wahoolcode/mywebsite/public/seller/fulfillment/'><span itemprop='name'>履约</span></a><meta itemprop='position' content='10' /></li><li> / </li><li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>履约订单</span><meta itemprop='position' content='11' /></li>
   
 
   
@@ -706,7 +709,7 @@ name type desc example code integer 响应状态码 200 message string 提示信
     >
         说明
     </h3>
-    <a data-clipboard-text="http://localhost:1313/wahool/seller/fulfillment/fulfillment/#说明" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 说明" aria-label="Anchor to: 说明" href="#%e8%af%b4%e6%98%8e">
+    <a data-clipboard-text="http://localhost:1313/Users/xingxinping/file/work/wahoolcode/mywebsite/public/seller/fulfillment/fulfillment/#说明" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 说明" aria-label="Anchor to: 说明" href="#%e8%af%b4%e6%98%8e">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
@@ -719,10 +722,11 @@ name type desc example code integer 响应状态码 200 message string 提示信
     >
         分页查询商家未履约订单
     </h2>
-    <a data-clipboard-text="http://localhost:1313/wahool/seller/fulfillment/fulfillment/#分页查询商家未履约订单" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 分页查询商家未履约订单" aria-label="Anchor to: 分页查询商家未履约订单" href="#%e5%88%86%e9%a1%b5%e6%9f%a5%e8%af%a2%e5%95%86%e5%ae%b6%e6%9c%aa%e5%b1%a5%e7%ba%a6%e8%ae%a2%e5%8d%95">
+    <a data-clipboard-text="http://localhost:1313/Users/xingxinping/file/work/wahoolcode/mywebsite/public/seller/fulfillment/fulfillment/#分页查询商家未履约订单" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 分页查询商家未履约订单" aria-label="Anchor to: 分页查询商家未履约订单" href="#%e5%88%86%e9%a1%b5%e6%9f%a5%e8%af%a2%e5%95%86%e5%ae%b6%e6%9c%aa%e5%b1%a5%e7%ba%a6%e8%ae%a2%e5%8d%95">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
+<p>特殊说明:返回所有未履约订单，商家调用发货api后则不再返回</p>
 <blockquote>
 <p>BASIC</p>
 </blockquote>
@@ -983,7 +987,7 @@ name type desc example code integer 响应状态码 200 message string 提示信
     >
         查询履约单明细
     </h2>
-    <a data-clipboard-text="http://localhost:1313/wahool/seller/fulfillment/fulfillment/#查询履约单明细" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 查询履约单明细" aria-label="Anchor to: 查询履约单明细" href="#%e6%9f%a5%e8%af%a2%e5%b1%a5%e7%ba%a6%e5%8d%95%e6%98%8e%e7%bb%86">
+    <a data-clipboard-text="http://localhost:1313/Users/xingxinping/file/work/wahoolcode/mywebsite/public/seller/fulfillment/fulfillment/#查询履约单明细" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 查询履约单明细" aria-label="Anchor to: 查询履约单明细" href="#%e6%9f%a5%e8%af%a2%e5%b1%a5%e7%ba%a6%e5%8d%95%e6%98%8e%e7%bb%86">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
@@ -1191,10 +1195,11 @@ name type desc example code integer 响应状态码 200 message string 提示信
     >
         商家发货
     </h2>
-    <a data-clipboard-text="http://localhost:1313/wahool/seller/fulfillment/fulfillment/#商家发货" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 商家发货" aria-label="Anchor to: 商家发货" href="#%e5%95%86%e5%ae%b6%e5%8f%91%e8%b4%a7">
+    <a data-clipboard-text="http://localhost:1313/Users/xingxinping/file/work/wahoolcode/mywebsite/public/seller/fulfillment/fulfillment/#商家发货" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 商家发货" aria-label="Anchor to: 商家发货" href="#%e5%95%86%e5%ae%b6%e5%8f%91%e8%b4%a7">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
+<p>特殊说明:不支持部分发货、所有商品必须全部发货</p>
 <blockquote>
 <p>BASIC</p>
 </blockquote>
@@ -1368,7 +1373,7 @@ name type desc example code integer 响应状态码 200 message string 提示信
     >
         分页查询需要拦截发货的履约订单
     </h2>
-    <a data-clipboard-text="http://localhost:1313/wahool/seller/fulfillment/fulfillment/#分页查询需要拦截发货的履约订单" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 分页查询需要拦截发货的履约订单" aria-label="Anchor to: 分页查询需要拦截发货的履约订单" href="#%e5%88%86%e9%a1%b5%e6%9f%a5%e8%af%a2%e9%9c%80%e8%a6%81%e6%8b%a6%e6%88%aa%e5%8f%91%e8%b4%a7%e7%9a%84%e5%b1%a5%e7%ba%a6%e8%ae%a2%e5%8d%95">
+    <a data-clipboard-text="http://localhost:1313/Users/xingxinping/file/work/wahoolcode/mywebsite/public/seller/fulfillment/fulfillment/#分页查询需要拦截发货的履约订单" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 分页查询需要拦截发货的履约订单" aria-label="Anchor to: 分页查询需要拦截发货的履约订单" href="#%e5%88%86%e9%a1%b5%e6%9f%a5%e8%af%a2%e9%9c%80%e8%a6%81%e6%8b%a6%e6%88%aa%e5%8f%91%e8%b4%a7%e7%9a%84%e5%b1%a5%e7%ba%a6%e8%ae%a2%e5%8d%95">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
@@ -1582,7 +1587,7 @@ name type desc example code integer 响应状态码 200 message string 提示信
     >
         商家履约反馈
     </h2>
-    <a data-clipboard-text="http://localhost:1313/wahool/seller/fulfillment/fulfillment/#商家履约反馈" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 商家履约反馈" aria-label="Anchor to: 商家履约反馈" href="#%e5%95%86%e5%ae%b6%e5%b1%a5%e7%ba%a6%e5%8f%8d%e9%a6%88">
+    <a data-clipboard-text="http://localhost:1313/Users/xingxinping/file/work/wahoolcode/mywebsite/public/seller/fulfillment/fulfillment/#商家履约反馈" class="gdoc-page__anchor clip flex align-center" title="Anchor to: 商家履约反馈" aria-label="Anchor to: 商家履约反馈" href="#%e5%95%86%e5%ae%b6%e5%b1%a5%e7%ba%a6%e5%8f%8d%e9%a6%88">
         <svg class="gdoc-icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
     </a>
 </div>
@@ -1944,7 +1949,7 @@ name type desc example code integer 响应状态码 200 message string 提示信
   
     <a
       class="gdoc-page__nav--prev flex align-center"
-      href="/wahool/seller/product/inventory/"
+      href="/Users/xingxinping/file/work/wahoolcode/mywebsite/public/seller/product/inventory/"
       title="库存"
     >
       <i class="gdoc-icon">gdoc_arrow_left_alt</i>
@@ -1956,7 +1961,7 @@ name type desc example code integer 响应状态码 200 message string 提示信
   
     <a
       class="gdoc-page__nav--next flex align-center"
-      href="/wahool/seller/auth/auth/"
+      href="/Users/xingxinping/file/work/wahoolcode/mywebsite/public/seller/auth/auth/"
       title="认证"
     >
       认证
@@ -2002,7 +2007,7 @@ name type desc example code integer 响应状态码 200 message string 提示信
     </div>
 
     
-  <script defer src="/wahool/js/search-95c697e2.bundle.min.js"></script>
+  <script defer src="/Users/xingxinping/file/work/wahoolcode/mywebsite/public/js/search-95c697e2.bundle.min.js"></script>
 
   </body>
 </html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>授权 on Wahool对接接口</title>
+    <link>http://localhost:1313/seller/seller/authorization/</link>
+    <description>Recent content in 授权 on Wahool对接接口</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 10 May 2024 10:45:48 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/seller/seller/authorization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>授权</title>
+      <link>http://localhost:1313/seller/seller/authorization/authorized/</link>
+      <pubDate>Fri, 10 May 2024 10:45:48 +0800</pubDate>
+      <guid>http://localhost:1313/seller/seller/authorization/authorized/</guid>
+      <description>获取认证token接口 BASIC&#xA;Path: /seller/202405/authorization&#xA;Method: POST&#xA;REQUEST&#xA;Request Body:&#xA;name required type desc example accessKey YES string RjtQObU4DB3egXyAjiYO secretKey YES string ddjY22igIqjeY0GtE8GUcRBtsQwOYYEGWFsoQb5u Request Demo:&#xA;{ &amp;quot;accessKey&amp;quot;: &amp;quot;RjtQObU4DB3egXyAjiYO&amp;quot;, &amp;quot;secretKey&amp;quot;: &amp;quot;ddjY22igIqjeY0GtE8GUcRBtsQwOYYEGWFsoQb5u&amp;quot; } RESPONSE&#xA;Body:&#xA;name type desc example code integer 响应状态码 200 message string 提示信息 success data Object&amp;lt;Data&amp;gt; 数据包 locale integer 8 localeDisplay string GMT+8 Data:&#xA;name type desc example expiresIn integer 有效期（秒） 7200000 accessToken string 访问令牌 Bearer eyJ0dGxNaWx**************************gNDYzfQ Response Demo:</description>
+    </item>
+  </channel>
+</rss>

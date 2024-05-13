@@ -1,16 +1,9 @@
-
 ---
 title: "库存"
 date: 2024-05-10T10:45:48+08:00
 draft: false
 ---
 
-### 说明
->商家库存相关接口
-
-
-
----
 ## 批量修改库存数量
 
 > BASIC
@@ -55,8 +48,8 @@ draft: false
 | code          | integer | 响应状态码 | 200     |
 | message       | string  | 提示信息  | success |
 | data          | object  | 数据包   |         |
-| locale        | integer |       | 0       |
-| localeDisplay | string  |       |         |
+| locale        | integer |       | 8       |
+| localeDisplay | string  |       | GMT+8   |
 
 **Response Demo:**
 
