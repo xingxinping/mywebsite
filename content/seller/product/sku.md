@@ -57,6 +57,7 @@ draft: false
 | &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&#124;─sellerSku | string  | 商家自己的Sku                | B0CQ4JNC58     |
 | &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&#124;─name      | string  | 商品名称                    | XX-Large Black |
 | &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&#124;─state     | integer | 状态 0 下架 1 上架 9待上架 99已归档 | 1              |
+| &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&#124;─quantity  | integer | 库存数量                    | 99             |
 | &ensp;&ensp;&#124;─total                             | integer | 总条数                     | 8              |
 | &ensp;&ensp;&#124;─totalPage                         | integer | 总页数                     | 1              |
 | &ensp;&ensp;&#124;─size                              | integer | 分页大小                    | 20             |
@@ -75,7 +76,8 @@ draft: false
         "sku": "WU66ECPM8B",
         "sellerSku": "B0CQ4JNC58",
         "name": "XX-Large Black",
-        "state": 1
+        "state": 1,
+        "quantity": 99
       }
     ],
     "total": 8,

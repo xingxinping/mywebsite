@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Wahool对接接口</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content in Home on Wahool对接接口</description>
+    <title>Home on Wahool Open Api 文档</title>
+    <link>http://localhost:1313/doc/</link>
+    <description>Recent content in Home on Wahool Open Api 文档</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 10 May 2024 10:45:48 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/doc/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>sku</title>
-      <link>http://localhost:1313/seller/product/sku/</link>
+      <link>http://localhost:1313/doc/seller/product/sku/</link>
       <pubDate>Fri, 10 May 2024 10:45:48 +0800</pubDate>
-      <guid>http://localhost:1313/seller/product/sku/</guid>
+      <guid>http://localhost:1313/doc/seller/product/sku/</guid>
       <description>分页查询商家商品sku基础信息列表 BASIC&#xA;Path: /seller/202405/product/sku/base-list&#xA;Method: POST&#xA;REQUEST&#xA;Request Body:&#xA;name required type desc example size NO integer 每页条数 默认 20，max 200 20 page NO string 第几页 默认 1 1 state NO object 状态 0 下架 1 上架 9待上架 99已归档 1 skuList NO array wahool sku列表 |─ NO string wahool sku WU66ECPM8B sellerSkuList NO array 商家自己的SKU列表 |─ NO string 商家自己的SKU B0CQ4JNC58 Request Demo:&#xA;{ &amp;quot;state&amp;quot;: 1, &amp;quot;skuList&amp;quot;: [ &amp;quot;WU66ECPM8B&amp;quot; ], &amp;quot;sellerSkuList&amp;quot;: [ &amp;quot;B0CQ4JNC58&amp;quot; ], &amp;quot;size&amp;quot;: 1, &amp;quot;page&amp;quot;: 20 } RESPONSE</description>
     </item>
     <item>
       <title>履约订单</title>
-      <link>http://localhost:1313/seller/fulfillment/orders/</link>
+      <link>http://localhost:1313/doc/seller/fulfillment/orders/</link>
       <pubDate>Fri, 10 May 2024 10:45:48 +0800</pubDate>
-      <guid>http://localhost:1313/seller/fulfillment/orders/</guid>
+      <guid>http://localhost:1313/doc/seller/fulfillment/orders/</guid>
       <description>分页查询商家履约订单 特殊说明:返回所有待履约/待拦截发货的订单，商家处理后状态发生改变则不再返回&#xA;BASIC&#xA;Path: /seller/202405/fulfillment/orders/list&#xA;Method: GET&#xA;REQUEST&#xA;Query:&#xA;name required desc example size NO 每页条数 默认 20，max 200 20 page NO 第几页 默认 1 1 queryState YES 查询状态&#xA;UNFULFILLED :待履约&#xA;INTERCEPT_SHIPPED :待拦截发货&#xA;UNFULFILLED RESPONSE&#xA;Body:&#xA;name type desc example code integer 响应状态码 200 message string 提示信息 success data object 数据包 |─ list List&amp;lt;FulfillmentOrder&amp;gt; 数据项 |─ total integer 总条数 8 |─ totalPage integer 总页数 1 |─ size integer 分页大小 20 |─ currentPage integer 当前页 1 locale integer 8 localeDisplay string GMT+8 FulfillmentOrder name type desc example fulfillmentOrderNumber String 履约单号 1231154465 state Integer 0未发货 20已发货 90已取消 0 address Object&amp;lt;Address&amp;gt; 收货地址 - items Object&amp;lt;Items&amp;gt; 履约商品 - Address name required desc example consignee String 收件人 Matt phone String 联系电话 +11927361822 address1 String 地址1 1234 amazon way address2 String 地址2 suite 123 address3 String 地址3 - address4 String 地址4 - city String 城市 Troy stateProvince String 州/省 MI postalCode Integer 邮政编码 48084 countryCode String 国家code US Items name required desc example sku string wahool Sku WU66ECPM8B sellerSku string 商家自己的Sku B0CQ4JNC58 quantity integer 商品数量 3 Response Demo:</description>
     </item>
     <item>
       <title>库存</title>
-      <link>http://localhost:1313/seller/product/inventory/</link>
+      <link>http://localhost:1313/doc/seller/product/inventory/</link>
       <pubDate>Fri, 10 May 2024 10:45:48 +0800</pubDate>
-      <guid>http://localhost:1313/seller/product/inventory/</guid>
-      <description>批量修改库存数量 BASIC&#xA;Path: /seller/202405/product/inventory/batch-update&#xA;Method: POST&#xA;REQUEST&#xA;Request Body:&#xA;name required type desc example YES array YES object |─sku YES string wahool Sku WU66ECPM8B |─quantity YES integer 库存数量 2 Request Demo:&#xA;[ { &amp;quot;sku&amp;quot;: &amp;quot;WU66ECPM8B&amp;quot;, &amp;quot;quantity&amp;quot;: 2 } ] RESPONSE&#xA;Body:&#xA;name type desc example code integer 响应状态码 200 message string 提示信息 success data object 数据包 locale integer 8 localeDisplay string GMT+8 Response Demo:&#xA;{ &amp;quot;code&amp;quot;: 200, &amp;quot;message&amp;quot;: &amp;quot;success&amp;quot;, &amp;quot;data&amp;quot;: {}, &amp;quot;locale&amp;quot;: 0, &amp;quot;localeDisplay&amp;quot;: &amp;quot;&amp;quot; } 分页查询库存列表 BASIC</description>
+      <guid>http://localhost:1313/doc/seller/product/inventory/</guid>
+      <description>批量修改库存数量 BASIC&#xA;Path: /seller/202405/product/inventory/batch-update&#xA;Method: POST&#xA;REQUEST&#xA;Request Body:&#xA;name required type desc example YES array 修改条目数组 max 200 YES object 修改条目 |─sku YES string wahool Sku WU66ECPM8B |─quantity YES integer 库存数量 2 Request Demo:&#xA;[ { &amp;quot;sku&amp;quot;: &amp;quot;WU66ECPM8B&amp;quot;, &amp;quot;quantity&amp;quot;: 2 } ] RESPONSE&#xA;Body:&#xA;name type desc example code integer 响应状态码 200 message string 提示信息 success data object 数据包 locale integer 8 localeDisplay string GMT+8 Response Demo:&#xA;{ &amp;quot;code&amp;quot;: 200, &amp;quot;message&amp;quot;: &amp;quot;success&amp;quot;, &amp;quot;data&amp;quot;: {}, &amp;quot;locale&amp;quot;: 0, &amp;quot;localeDisplay&amp;quot;: &amp;quot;&amp;quot; } 分页查询库存列表 BASIC</description>
     </item>
     <item>
       <title>授权</title>
-      <link>http://localhost:1313/seller/authorization/authorized/</link>
+      <link>http://localhost:1313/doc/seller/authorization/authorized/</link>
       <pubDate>Fri, 10 May 2024 10:45:48 +0800</pubDate>
-      <guid>http://localhost:1313/seller/authorization/authorized/</guid>
+      <guid>http://localhost:1313/doc/seller/authorization/authorized/</guid>
       <description>获取认证token接口 BASIC&#xA;Path: /seller/202405/authorization&#xA;Method: POST&#xA;REQUEST&#xA;Request Body:&#xA;name required type desc example accessKey YES string RjtQObU4DB3egXyAjiYO secretKey YES string ddjY22igIqjeY0GtE8GUcRBtsQwOYYEGWFsoQb5u Request Demo:&#xA;{ &amp;quot;accessKey&amp;quot;: &amp;quot;RjtQObU4DB3egXyAjiYO&amp;quot;, &amp;quot;secretKey&amp;quot;: &amp;quot;ddjY22igIqjeY0GtE8GUcRBtsQwOYYEGWFsoQb5u&amp;quot; } RESPONSE&#xA;Body:&#xA;name type desc example code integer 响应状态码 200 message string 提示信息 success data Object&amp;lt;Data&amp;gt; 数据包 locale integer 8 localeDisplay string GMT+8 Data:&#xA;name type desc example expiresIn integer 有效期（秒） 7200000 accessToken string 访问令牌 Bearer eyJ0dGxNaWx**************************gNDYzfQ Response Demo:</description>
     </item>
     <item>
       <title>概述</title>
-      <link>http://localhost:1313/seller/overview/</link>
+      <link>http://localhost:1313/doc/seller/overview/</link>
       <pubDate>Fri, 10 May 2024 10:45:48 +0800</pubDate>
-      <guid>http://localhost:1313/seller/overview/</guid>
-      <description> Context Context&#xA;支持的请求方式 GET POST PUT DELETE API调用 Test https://open-api.test.wahool.com&#xA;Prod https://open-api.wahool.com&#xA;Common parameters Headers:&#xA;name value required desc Authorization Bearer eyJ0dGxNaWxsaXMiOjc********joxNzE0OTgNDYzfQ Yes 认证接口返回的accessToken 流程图 </description>
+      <guid>http://localhost:1313/doc/seller/overview/</guid>
+      <description> Context Context&#xA;支持的请求方式 GET POST PUT DELETE API调用 Test https://open-api.test.wahool.com/api&#xA;Prod https://open-api.wahool.com/api&#xA;Common parameters Headers:&#xA;name value required desc Authorization Bearer eyJ0dGxNaWxsaXMiOjc********joxNzE0OTgNDYzfQ Yes 认证接口返回的accessToken 流程图 </description>
     </item>
   </channel>
 </rss>

@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>履约 on Wahool对接接口</title>
-    <link>http://localhost:1313/seller/fulfillment/</link>
-    <description>Recent content in 履约 on Wahool对接接口</description>
+    <title>履约 on Wahool Open Api 文档</title>
+    <link>http://localhost:1313/doc/seller/fulfillment/</link>
+    <description>Recent content in 履约 on Wahool Open Api 文档</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 10 May 2024 10:45:48 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/seller/fulfillment/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/doc/seller/fulfillment/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>履约订单</title>
-      <link>http://localhost:1313/seller/fulfillment/orders/</link>
+      <link>http://localhost:1313/doc/seller/fulfillment/orders/</link>
       <pubDate>Fri, 10 May 2024 10:45:48 +0800</pubDate>
-      <guid>http://localhost:1313/seller/fulfillment/orders/</guid>
+      <guid>http://localhost:1313/doc/seller/fulfillment/orders/</guid>
       <description>分页查询商家履约订单 特殊说明:返回所有待履约/待拦截发货的订单，商家处理后状态发生改变则不再返回&#xA;BASIC&#xA;Path: /seller/202405/fulfillment/orders/list&#xA;Method: GET&#xA;REQUEST&#xA;Query:&#xA;name required desc example size NO 每页条数 默认 20，max 200 20 page NO 第几页 默认 1 1 queryState YES 查询状态&#xA;UNFULFILLED :待履约&#xA;INTERCEPT_SHIPPED :待拦截发货&#xA;UNFULFILLED RESPONSE&#xA;Body:&#xA;name type desc example code integer 响应状态码 200 message string 提示信息 success data object 数据包 |─ list List&amp;lt;FulfillmentOrder&amp;gt; 数据项 |─ total integer 总条数 8 |─ totalPage integer 总页数 1 |─ size integer 分页大小 20 |─ currentPage integer 当前页 1 locale integer 8 localeDisplay string GMT+8 FulfillmentOrder name type desc example fulfillmentOrderNumber String 履约单号 1231154465 state Integer 0未发货 20已发货 90已取消 0 address Object&amp;lt;Address&amp;gt; 收货地址 - items Object&amp;lt;Items&amp;gt; 履约商品 - Address name required desc example consignee String 收件人 Matt phone String 联系电话 +11927361822 address1 String 地址1 1234 amazon way address2 String 地址2 suite 123 address3 String 地址3 - address4 String 地址4 - city String 城市 Troy stateProvince String 州/省 MI postalCode Integer 邮政编码 48084 countryCode String 国家code US Items name required desc example sku string wahool Sku WU66ECPM8B sellerSku string 商家自己的Sku B0CQ4JNC58 quantity integer 商品数量 3 Response Demo:</description>
     </item>
   </channel>

@@ -18,12 +18,12 @@ draft: false
 
 **Request Body:**
 
-| name                        | required | type    | desc       | example    |
-|-----------------------------|----------|---------|------------|------------|
-|                             | YES      | array   |            |            |
-|                             | YES      | object  |            |            |
-| &ensp;&ensp;&#124;─sku      | YES      | string  | wahool Sku | WU66ECPM8B |
-| &ensp;&ensp;&#124;─quantity | YES      | integer | 库存数量       | 2          |
+| name                        | required | type    | desc             | example    |
+|-----------------------------|----------|---------|------------------|------------|
+|                             | YES      | array   | 修改条目数组   max 200 |            |
+|                             | YES      | object  | 修改条目             |            |
+| &ensp;&ensp;&#124;─sku      | YES      | string  | wahool Sku       | WU66ECPM8B |
+| &ensp;&ensp;&#124;─quantity | YES      | integer | 库存数量             | 2          |
 
 **Request Demo:**
 

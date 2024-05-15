@@ -19,11 +19,11 @@ draft: false
 
 #### Test
 
-> https://open-api.test.wahool.com
+> https://open-api.test.wahool.com/api
 
 #### Prod
 
-> https://open-api.wahool.com
+> https://open-api.wahool.com/api
 
 ### Common parameters
 
